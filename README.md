@@ -70,7 +70,7 @@ cd HeadScanning
 pip install -r requirements.txt
 ```
 
-> *Optional:* if you want a GUI to verify the camera is working before running the pipeline, install Intel **RealSense Viewer** from <https://www.intelrealsense.com/sdk-2/>. Make sure to close RealSense Viewer before running `head_scanner.py` — only one program can access the camera at a time.
+> *Optional:* if you want a GUI to verify the camera is working before running the pipeline, install Intel **RealSense Viewer** from <https://github.com/realsenseai/librealsense/releases>. Make sure to close RealSense Viewer before running `head_scanner.py` — only one program can access the camera at a time.
 
 ### Step 5 — Configure the Script
 
