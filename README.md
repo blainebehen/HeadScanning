@@ -1,6 +1,6 @@
 # HeadScanning
 
-A 3D scanning pipeline that uses a Universal Robots UR5e collaborative robot arm and an Intel RealSense D435 depth camera to capture, denoise, and mesh physical objects into 3D-printable STL models.
+A 3D scanning pipeline that uses a UR5e collaborative robot and Intel RealSense D435 stereoscopic camera to capture, merge, denoise, and mesh RGBD data of objects into 3D-printable STL models.
 
 The robot rotates the camera around an object, captures RGBD data from seven preset poses, merges the captured data into a single point cloud, denoises the result with MCMD_Z, and produces a watertight mesh by using the Poisson Surface Reconstruction implementation in Open3D. This pipeline was developed as part of a Master's thesis in Applied Mathematics and Statistics at Cal Poly Pomona.
 
@@ -133,10 +133,10 @@ Objects outside this region may not be fully captured by the seven-pose sweep.
 
 ## Tips
 
-- **Matte, opaque objects scan best** Clear plastics and shiny metals can cause sparse point cloud sampling or extraneous points/meshing.
-- **Fine details smaller than ~7 mm get smoothed** by Poisson reconstruction at the default octree depth. Increase `POISSON_DEPTH` to preserve them, at the cost of more noise.
-- **Don't move the table or robot base between scans** The scanning protocol is designed for a fixed setup.
-- **For specular (shiny) objects**, oblique camera angles capture better than direct ones — see Section 3.2 of the thesis.
+- **Matte, opaque objects scan best.** Clear plastics and shiny metals can cause sparse point cloud sampling or extraneous points/meshing.
+- **Fine details smaller than ~7 mm get smoothed.** by Poisson reconstruction at the default octree depth. Increase `POISSON_DEPTH` to preserve them, at the cost of more noise.
+- **Don't move the table or robot base between scans.** The scanning protocol is designed for a fixed setup.
+- **For specular (shiny) objects:**, oblique camera angles capture better than direct ones — see Section 3.2 of the thesis.
 
 ---
 
