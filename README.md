@@ -29,11 +29,9 @@ This guide assumes no prior experience. Follow each step carefully.
 Before running anything, make sure you have:
 
 - A **Universal Robots UR5e** powered on, in Remote Control mode, connected to the local network
-- An **Intel RealSense Depth Camera D435** mounted directly to the robot's tool flange using the project mounting bracket
+- An **Intel RealSense Depth Camera D435** mounted directly to the robot's tool flange.
 - The camera connected to your computer via USB-C
 - A flat surface in front of the robot where the scanned object will be placed
-
-> The pipeline depends on the camera being in the exact mounting position used during calibration. If the bracket has been moved or replaced, you'll need to recalibrate the camera TCP — see Step 5.
 
 ### Step 2 — Install Python
 
@@ -80,8 +78,6 @@ Open `head_scanner.py` in a text editor and edit the `USER SETTINGS` block near 
 - `OUT_DIR` — the directory where output files will be saved
 
 The other settings (motion speed, bounding box, MCMD parameters, Poisson parameters) have working defaults.
-
-> If the camera mounting bracket has changed, you also need to update `p_cam` and `d_cam` in the `TRANSFORM DEFINITIONS` block. See Section 2.4 of the thesis for the calibration procedure.
 
 ---
 
