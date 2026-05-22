@@ -123,7 +123,7 @@ For best results, the object should fit within these bounds:
 - `y ∈ [-550, -264]` mm
 - `z ∈ [-17, 220]` mm
 
-Objects outside this region may not be fully captured by the seven-pose sweep.
+Objects outside this region may not be fully captured by the seven pose protocol.
 
 ---
 
