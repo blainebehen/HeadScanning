@@ -31,7 +31,7 @@ from rtde_receive import RTDEReceiveInterface
 # USER SETTINGS
 # =========================================================
 ROBOT_IP = "192.168.99.228"
-OUT_DIR = r"C:\Users\bsbehen\OneDrive - Cal Poly Pomona\Desktop\pipeline_output"
+OUT_DIR = "pipeline_output"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 MOVE_SPEED = 0.5
