@@ -13,7 +13,7 @@ of the cleaned, merged cloud, and performs Poisson Surface Reconstruction to out
 
 ```
 HeadScanning/
-├── head_scanner.py     # Main pipeline (capture → mesh)
+├── head_scanner.py     # Main pipeline
 ├── requirements.txt    # Python dependencies
 └── README.md
 ```
