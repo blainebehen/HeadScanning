@@ -96,7 +96,7 @@ python head_scanner.py
 The script will prompt you for an object name, then automatically:
 
 1. Drive the robot through the seven capture poses
-2. Save RGBD frames and per-pose point clouds
+2. Capture a 3D point cloud at each pose
 3. Merge the point clouds into the robot's base frame
 4. Denoise with MCMD_Z
 5. Fill the underside of the object with synthetic base points
@@ -113,7 +113,7 @@ When it finishes, you'll have these files in your `OUT_DIR` (filenames use the s
 | `poisson_mesh_mug.stl` | Watertight mesh from Poisson reconstruction |
 | `flat_base_mug.stl` | Final mesh with flat base — **this is the one you print** |
 
-Per-pose captures (`color_0.png`, `depth_0.png`, `cloud_pos_0.ply`, etc.) are also saved for debugging.
+Per-pose data (`color_0.png`, `depth_0.png`, `cloud_pos_0.ply`, etc.) is also saved for debugging.
 
 ---
 
