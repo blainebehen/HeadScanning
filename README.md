@@ -108,7 +108,7 @@ When it finishes, you'll have these files in your `OUT_DIR` (filenames use the s
 | File | Description |
 | ---- | ----------- |
 | `merged_pointcloud_mug.ply` | Raw merged point cloud, all seven captures combined |
-| `MCMD_cleaned_pointcloud_mug.ply` | After MCMD_Z denoising |
+| `MCMD_cleaned_pointcloud_mug.ply` | Merged point cloud after MCMD_Z denoising |
 | `MCMD_cleaned_pointcloud_filled_mug.ply` | Denoised cloud with synthetic base added |
 | `poisson_mesh_mug.stl` | Watertight mesh from Poisson reconstruction |
 | `flat_base_mug.stl` | Final mesh with flat base — **this is the one you print** |
