@@ -135,7 +135,7 @@ Objects outside this region may not be fully captured by the seven-pose sweep.
 
 - **Matte, opaque objects scan best** Clear plastics and shiny metals can cause sparse point cloud sampling or extraneous points/meshing.
 - **Fine details smaller than ~7 mm get smoothed** by Poisson reconstruction at the default octree depth. Increase `POISSON_DEPTH` to preserve them, at the cost of more noise.
-- **Don't move the table or robot base between scans** The seven poses are calibrated to a fixed setup.
+- **Don't move the table or robot base between scans** The scanning protocal is designed for a fixed setup.
 - **For specular (shiny) objects**, oblique camera angles capture better than direct ones — see Section 3.2 of the thesis.
 
 ---
