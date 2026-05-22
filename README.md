@@ -2,7 +2,7 @@
 
 A 3D scanning pipeline that uses a Universal Robots UR5e collaborative robot arm and an Intel RealSense D435 depth camera to capture, denoise, and mesh physical objects into 3D-printable STL models.
 
-The robot rotates the camera around the object, takes RGBD captures from seven preset poses, merges them into a single point cloud, denoises the result with MCMD_Z, and produces a watertight mesh via Poisson Surface Reconstruction. Developed as part of a Master's thesis in Applied Mathematics at Cal Poly Pomona.
+The robot rotates the camera around an object, captures RGBD data from seven preset poses, merges the captured data into a single point cloud, denoises the result with MCMD_Z, and produces a watertight mesh by using the Poisson Surface Reconstruction implementation in Open3D. This pipeline was developed as part of a Master's thesis in Applied Mathematics and Statistics at Cal Poly Pomona.
 
 **Example output:**
 
