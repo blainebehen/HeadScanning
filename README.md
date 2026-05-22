@@ -94,7 +94,7 @@ The script will prompt you for an object name, then automatically:
 1. Drive the robot through the seven capture poses
 2. Capture a 3D point cloud at each pose
 3. Merge the point clouds into the robot's base frame
-4. Denoise with MCMD_Z
+4. Denoise the merged point cloud with MCMD_Z
 5. Fill the underside of the object with synthetic base points
 6. Mesh the result with Poisson Surface Reconstruction
 7. Slice the bottom flat and export the final STL
